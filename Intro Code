@@ -1,0 +1,15 @@
+earned_amount = ["Bubblegum: $202", "Toffee: $118", "Ice cream: $2250", "Milk chocolate: $1680", "Doughnut: $1075", "Pancake: $80"]
+print("Earned amount:")
+for i in range(0,len(earned_amount)):
+    print(earned_amount[i])
+
+income = 5405
+print("\nIncome: $",income, sep = "")
+
+staff_expenses = int(input("Staff expenses:"))
+other_expenses = int(input("Other expenses:"))
+
+income = income - staff_expenses
+income = income - other_expenses
+
+print("Net income: $", income, sep = "")
